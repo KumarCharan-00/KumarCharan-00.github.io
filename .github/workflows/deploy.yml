@@ -1,0 +1,81 @@
+name: CI/CD Pipeline — Java, Terraform & GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # ── Phase 1: Verify Java 21 Backend & Terraform Infrastructure ──
+  verify-backend-and-iac:
+    name: Verify Java 21 & Terraform IaC
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Java 21 JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'maven'
+
+      - name: Compile Java Spring Boot Backend
+        run: |
+          cd java-backend
+          mvn clean compile -B
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Validate Terraform Infrastructure
+        run: |
+          cd terraform
+          terraform init -backend=false
+          terraform validate
+
+  # ── Phase 2: Build & Deploy React Frontend to GitHub Pages ──
+  build-and-deploy-frontend:
+    name: Build & Deploy Frontend to Pages
+    needs: verify-backend-and-iac
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Frontend Dependencies
+        run: npm ci
+
+      - name: Build Vite Production Bundle
+        run: npm run build
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
