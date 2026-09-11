@@ -4,9 +4,6 @@ import { Cpu, Mail, Menu, X } from 'lucide-react';
 const NAV_ITEMS = [
   { label: 'Case Studies', href: '#case-studies' },
   { label: 'AI Projects', href: '#personal-projects' },
-  { label: 'Architecture', href: '#architecture' },
-  { label: 'AWS Sizing', href: '#aws-estimator' },
-  { label: 'API Sandbox', href: '#api-sandbox' },
   { label: 'Tech Stack', href: '#skills' },
 ];
 

@@ -4,9 +4,6 @@ import HeroSection from './components/HeroSection';
 import PitchBanner from './components/PitchBanner';
 import CaseStudiesSection from './components/CaseStudiesSection';
 import PersonalProjectsSection from './components/PersonalProjectsSection';
-import ArchVisualizer from './components/ArchVisualizer';
-import AwsEstimator from './components/AwsEstimator';
-import ApiConsole from './components/ApiConsole';
 import SkillsMatrix from './components/SkillsMatrix';
 import DeliveryFramework from './components/DeliveryFramework';
 import ContactSection from './components/ContactSection';
@@ -38,15 +35,6 @@ export default function App() {
 
       {/* Autonomous AI Agents & Personal Projects */}
       <PersonalProjectsSection />
-
-      {/* Interactive System Topology Visualizer */}
-      <ArchVisualizer />
-
-      {/* Consultative AWS Cloud Cost & Scaling Estimator */}
-      <AwsEstimator onOpenContact={handleOpenContact} />
-
-      {/* Interactive REST API Sandbox Simulator */}
-      {/*  <ApiConsole /> */}
 
       {/* Technical Stack Radar & Competencies */}
       <SkillsMatrix />

@@ -148,7 +148,7 @@ export default function ContactSection({ isOpen, onClose }) {
                     <option>AWS Cloud Infrastructure & Serverless (Lambda / SAM)</option>
                     <option>AI / ML Agents & LlamaIndex RAG Pipelines</option>
                     <option>PCI DSS Compliance & Security Authorizer</option>
-                    <option>General Technical Consultation — Let's Discuss</option>
+                    <option>General Technical Consultation: Let's Discuss</option>
                     <option>Other / Open for Exploration</option>
                   </select>
                 </div>
@@ -187,13 +187,13 @@ export default function ContactSection({ isOpen, onClose }) {
                       flex: '1 1 200px',
                       display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
                       padding: '12px 18px', borderRadius: 10,
-                      background: '#25D366', color: '#ffffff',
+                      background: '#059669', color: '#ffffff',
                       fontWeight: 700, fontSize: '0.86rem', border: 'none', cursor: 'pointer',
-                      boxShadow: '0 4px 16px rgba(37, 211, 102, 0.3)',
+                      boxShadow: '0 4px 16px rgba(5, 150, 105, 0.35)',
                       transition: 'all 0.2s ease',
                     }}
-                    onMouseEnter={e => { e.currentTarget.style.background = '#22bf5b'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                    onMouseLeave={e => { e.currentTarget.style.background = '#25D366'; e.currentTarget.style.transform = ''; }}
+                    onMouseEnter={e => { e.currentTarget.style.background = '#047857'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.background = '#059669'; e.currentTarget.style.transform = ''; }}
                   >
                     <MessageSquare size={15} /> Send WhatsApp Message
                   </button>

@@ -5,8 +5,8 @@ import GeometricAccents from './GeometricAccents';
 const PERSONAL_PROJECTS = [
   {
     id: "smart-note-ai",
-    title: "Smart Note — AI-Powered Notes Analyser & Converter",
-    period: "April 2026 – Present",
+    title: "Smart Note: AI-Powered Notes Analyser & Converter",
+    period: "April 2026 to Present",
     techStack: ["Python", "LlamaIndex", "RAG", "Vector Indexing", "LLM Agents", "Prompt Engineering"],
     badge: "AI / RAG Pipeline",
     color: "#F9BE00",
@@ -20,7 +20,7 @@ const PERSONAL_PROJECTS = [
   {
     id: "pr-review-agent",
     title: "GitHub PR Review Agent",
-    period: "March 2026 – April 2026",
+    period: "March 2026 to April 2026",
     link: "https://github.com/KumarCharan-00/PR-Review-Agent",
     linkText: "github.com/KumarCharan-00/PR-Review-Agent",
     techStack: ["Python 3.10", "LlamaIndex AgentWorkflow", "Google Gemini", "PyGithub", "GitHub Actions"],
@@ -36,7 +36,7 @@ const PERSONAL_PROJECTS = [
   {
     id: "iskm-proddatur",
     title: "ISKM Proddatur Web Platform",
-    period: "November 2025 – March 2026",
+    period: "November 2025 to March 2026",
     link: "https://dev.iskmpdtr-int.cloud",
     linkText: "dev.iskmpdtr-int.cloud",
     techStack: ["Spring Boot", "PostgreSQL", "Docker", "React", "Vanilla JS", "Dokploy"],

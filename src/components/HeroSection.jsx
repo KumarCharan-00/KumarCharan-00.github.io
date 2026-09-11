@@ -296,9 +296,9 @@ export default function HeroSection({ onOpenContact }) {
               I build{' '}
               <strong style={{ color: '#0d0d1a', fontWeight: 700 }}>Enterprise Java Applications</strong>,{' '}
               <strong style={{ color: '#0d0d1a', fontWeight: 700 }}>Microservices</strong>,{' '}
-              <strong style={{ color: '#0d0d1a', fontWeight: 700 }}>AI agents</strong> and{' '}
+              <strong style={{ color: '#0d0d1a', fontWeight: 700 }}>AI agents</strong>, and{' '}
               <strong style={{ color: '#0d0d1a', fontWeight: 700 }}>AWS cloud systems</strong>{' '}
-              — with 4+ years expertise in turning complex requirements into scalable production software
+              to turn complex requirements into scalable production software.
             </p>
 
             {/* Specialty chips */}

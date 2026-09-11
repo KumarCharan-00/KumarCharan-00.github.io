@@ -33,7 +33,7 @@ export default function SkillsMatrix() {
           </div>
           <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 900, color: '#0f172a', marginBottom: 14 }}>Technical Competencies & Stack</h2>
           <p style={{ fontSize: '0.98rem', color: '#475569', lineHeight: 1.7 }}>
-            4+ years of production experience spanning enterprise <strong style={{ color: '#0f172a' }}>Java microservices</strong>, <strong style={{ color: '#0f172a' }}>Python AI/ML pipelines</strong>, <strong style={{ color: '#0f172a' }}>AWS serverless cloud</strong>, and full-cycle DevOps & security.
+            Comprehensive production experience spanning enterprise <strong style={{ color: '#0f172a' }}>Java microservices</strong>, <strong style={{ color: '#0f172a' }}>Python AI/ML pipelines</strong>, <strong style={{ color: '#0f172a' }}>AWS serverless cloud</strong>, and full-cycle DevOps & security.
           </p>
         </div>
 
