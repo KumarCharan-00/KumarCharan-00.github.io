@@ -37,10 +37,7 @@ export default function Footer() {
             <span>Java 21 • AWS • AI Agents</span>
           </div>
 
-          {/* Copyright */}
-          <div style={{ fontSize: '0.7rem', fontFamily: 'var(--font-mono)', color: '#64748b' }}>
-            © {new Date().getFullYear()} Kumar Charan M. Handcrafted & Engineered.
-          </div>
+
 
         </div>
       </div>

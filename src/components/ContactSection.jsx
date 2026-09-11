@@ -88,10 +88,15 @@ export default function ContactSection({ isOpen, onClose }) {
           </div>
 
           {/* 2-Column Layout */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 28, alignItems: 'start' }} className="contact-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 28, alignItems: 'center' }} className="contact-grid">
 
             {/* Left: Contact Info */}
-            <div style={{ background: '#f8fafc', padding: 26, borderRadius: 12, border: '1px solid #e2e8f0' }}>
+            <div className="contact-info-card" style={{
+              background: '#f8fafc',
+              padding: 26,
+              borderRadius: 12,
+              border: '1px solid #e2e8f0',
+            }}>
               <div style={{ marginBottom: 20 }}>
                 <span style={{ fontSize: '0.7rem', fontFamily: 'var(--font-mono)', color: '#64748b', display: 'block', marginBottom: 8 }}>Direct Email</span>
                 <button onClick={handleCopyEmail} className="btn-secondary" style={{ width: '100%', justifyContent: 'space-between', padding: '11px 14px', fontSize: '0.8rem', background: '#ffffff' }}>
@@ -112,7 +117,7 @@ export default function ContactSection({ isOpen, onClose }) {
                 </div>
               </div>
 
-              <div style={{ marginBottom: 22 }}>
+              <div>
                 <span style={{ fontSize: '0.7rem', fontFamily: 'var(--font-mono)', color: '#64748b', display: 'block', marginBottom: 8 }}>Professional Profiles</span>
                 <div style={{ display: 'flex', gap: 10 }}>
                   <a href={PROFILE.github} target="_blank" rel="noreferrer" className="btn-secondary" style={{ flex: 1, padding: '9px 14px', fontSize: '0.78rem', background: '#ffffff' }}>
@@ -122,11 +127,6 @@ export default function ContactSection({ isOpen, onClose }) {
                     <Linkedin size={15} /> LinkedIn
                   </a>
                 </div>
-              </div>
-
-              <div style={{ background: '#d1fae5', border: '1px solid #a7f3d0', borderRadius: 10, padding: 14, fontSize: '0.76rem', color: '#047857', lineHeight: 1.6 }}>
-                <ShieldCheck size={14} color="#059669" style={{ display: 'inline', marginRight: 6, verticalAlign: 'middle' }} />
-                <strong>Quick Response Guarantee:</strong> All inquiries receive a response within 12 hours with technical details.
               </div>
             </div>
 
@@ -206,7 +206,15 @@ export default function ContactSection({ isOpen, onClose }) {
 
       <style>{`
         .contact-card { padding: 44px !important; }
-        @media (min-width: 768px) { .contact-grid { grid-template-columns: 5fr 7fr !important; } }
+        @media (min-width: 768px) {
+          .contact-grid {
+            grid-template-columns: 5fr 7fr !important;
+            align-items: start !important;
+          }
+          .contact-info-card {
+            margin-top: 28px !important;
+          }
+        }
         @media (max-width: 768px) { .contact-card { padding: 22px !important; } }
       `}</style>
     </section>
