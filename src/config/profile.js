@@ -8,5 +8,6 @@ export const PROFILE = {
   location: 'Hyderabad, Telangana, India',
   github: 'https://github.com/KumarCharan-00',
   linkedin: 'https://linkedin.com/in/kumarcharan00',
-  resume: '/KumarCharan_SeniorSoftwareEngineer.pdf',
+  resume: `${import.meta.env.BASE_URL}KumarCharan_SeniorSoftwareEngineer.pdf`,
 };
+
