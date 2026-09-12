@@ -7,7 +7,7 @@ const STEPS = [
   { phase: 'Phase 2', title: 'System Architecture & Sizing', icon: Cpu, color: '#F9BE00', bg: 'rgba(249,190,0,0.1)', desc: 'Architecting microservices or serverless topology on AWS, establishing resiliency patterns, and finalizing cloud cost estimates.' },
   { phase: 'Phase 3', title: 'Infrastructure as Code (IaC)', icon: FileText, color: '#E8392B', bg: 'rgba(232,57,43,0.1)', desc: 'Writing Terraform or AWS SAM scripts for VPCs, ECS Fargate clusters, IAM security roles, RDS PostgreSQL, and ALB routing.' },
   { phase: 'Phase 4', title: 'Agile Sprints & TDD Delivery', icon: GitPullRequest, color: '#10b981', bg: 'rgba(16,185,129,0.1)', desc: 'Writing clean Java 21 / Spring Boot 3 code with >85% JUnit 5 test coverage, Virtual Threads tuning, and regular demos.' },
-  { phase: 'Phase 5', title: 'Security Scan & Handover', icon: ShieldCheck, color: '#6366f1', bg: 'rgba(99,102,241,0.1)', desc: 'Automating zero-downtime CI/CD pipelines, executing load & security scans, and delivering complete technical documentation.' },
+  { phase: 'Phase 5', title: 'Security Scan & Handover', icon: ShieldCheck, color: '#6366f1', bg: 'rgba(99,102,241,0.1)', desc: 'Automating CI/CD pipelines, executing load & security scans, and delivering complete technical documentation.' },
 ];
 
 export default function DeliveryFramework() {

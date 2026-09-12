@@ -127,7 +127,7 @@ public class EnergyServiceApplication {
     metrics: [
       { label: "Apps Integrated", value: "3 Enterprise (1 B2C, 2 B2B)" },
       { label: "Legacy Payload Conversion", value: "XML to JSON" },
-      { label: "Regression Rate", value: "0% Production Downtime" },
+      { label: "Regression Rate", value: "< 0.1% Production Downtime" },
       { label: "Query Engine", value: "AEM CMS GraphQL" }
     ],
     architecture: {
