@@ -8,8 +8,8 @@ export default function PitchBanner({ onOpenContact }) {
     'Python AI Agents, RAG Pipelines & LLM Workflows',
     'PCI DSS 4.0 Security & Mutual TLS Auth',
     'AWS Serverless: Lambda, ECS, DynamoDB & SAM',
-    'Zero-Downtime CI/CD & Infrastructure as Code',
-    'Cost-Optimised Cloud Architecture Reviews',
+    'CI/CD & Infrastructure as Code',
+    'Cost-Optimised Cloud Architecture',
   ];
 
   const pillars = [
